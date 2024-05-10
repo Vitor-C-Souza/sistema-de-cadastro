@@ -4,33 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e9019ca-33c4-46e7-8890-288e7440f8c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1234567890.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CARLOS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sistema de cadastros.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VITORIACRISTINA.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VÍTORCAVALCANTESOUZA.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/formulario.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/MenuPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/answerNotRemoveException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/duplicidadeDeEmailException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/formatAlturaInvalidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/formatEmailInvalidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/idadeInvalidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/nomeLengthException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/Arquivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/Cadastro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/Formulario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/Leitura.java" afterDir="false" />
+    <list default="true" id="6e9019ca-33c4-46e7-8890-288e7440f8c1" name="Changes" comment="Sistema de cadastro de usuario no sistema de arquivos txt desenvolvido e finalizado.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1234567890.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CARLOS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VITORIACRISTINA.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VÍTORCAVALCANTESOUZA.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Vitor-C-Souza"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:Vitor-C-Souza/sistema-de-cadastro.git",
+    "accountId": "82f48cf4-0f12-41d5-ab08-1b18ff24a2ca"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -99,9 +90,20 @@
       <option name="presentableId" value="Default" />
       <updated>1715309407029</updated>
     </task>
+    <task id="LOCAL-00001" summary="Sistema de cadastro de usuario no sistema de arquivos txt desenvolvido e finalizado.">
+      <option name="closed" value="true" />
+      <created>1715381769474</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715381769474</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Sistema de cadastro de usuario no sistema de arquivos txt desenvolvido e finalizado." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sistema de cadastro de usuario no sistema de arquivos txt desenvolvido e finalizado." />
   </component>
 </project>
