@@ -1,10 +1,10 @@
-package service;
+package br.com.vcsouza.sistema_de_cadastro.service;
 
-import exception.formatAlturaInvalidException;
-import exception.formatEmailInvalidException;
-import exception.idadeInvalidException;
-import exception.nomeLengthException;
-import model.Usuario;
+import br.com.vcsouza.sistema_de_cadastro.exception.formatAlturaInvalidException;
+import br.com.vcsouza.sistema_de_cadastro.exception.formatEmailInvalidException;
+import br.com.vcsouza.sistema_de_cadastro.exception.idadeInvalidException;
+import br.com.vcsouza.sistema_de_cadastro.exception.nomeLengthException;
+import br.com.vcsouza.sistema_de_cadastro.model.Usuario;
 
 import java.util.List;
 

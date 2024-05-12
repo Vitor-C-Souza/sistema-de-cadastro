@@ -1,4 +1,4 @@
-package exception;
+package br.com.vcsouza.sistema_de_cadastro.exception;
 
 public class formatAlturaInvalidException extends RuntimeException {
     private final String message;

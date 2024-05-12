@@ -1,8 +1,8 @@
-package controller;
+package br.com.vcsouza.sistema_de_cadastro.controller;
 
-import service.Cadastro;
-import service.Formulario;
-import service.Leitura;
+import br.com.vcsouza.sistema_de_cadastro.service.Cadastro;
+import br.com.vcsouza.sistema_de_cadastro.service.Formulario;
+import br.com.vcsouza.sistema_de_cadastro.service.Leitura;
 
 import java.util.Scanner;
 

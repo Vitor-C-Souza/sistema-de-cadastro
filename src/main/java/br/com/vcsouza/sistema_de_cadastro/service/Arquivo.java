@@ -1,6 +1,6 @@
-package service;
+package br.com.vcsouza.sistema_de_cadastro.service;
 
-import model.Usuario;
+import br.com.vcsouza.sistema_de_cadastro.model.Usuario;
 
 import java.io.FileWriter;
 import java.io.IOException;

@@ -1,7 +1,7 @@
-package model;
+package br.com.vcsouza.sistema_de_cadastro.model;
 
-import exception.*;
-import service.Leitura;
+import br.com.vcsouza.sistema_de_cadastro.exception.*;
+import br.com.vcsouza.sistema_de_cadastro.service.Leitura;
 
 import java.util.List;
 

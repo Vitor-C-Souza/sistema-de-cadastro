@@ -1,4 +1,4 @@
-package service;
+package br.com.vcsouza.sistema_de_cadastro.service;
 
 import java.io.*;
 

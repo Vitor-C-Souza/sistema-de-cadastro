@@ -1,4 +1,6 @@
-import controller.MenuPrincipal;
+package br.com.vcsouza.sistema_de_cadastro;
+
+import br.com.vcsouza.sistema_de_cadastro.controller.MenuPrincipal;
 
 
 public class Main {
