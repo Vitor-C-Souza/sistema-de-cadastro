@@ -1,7 +1,10 @@
 package br.com.vcsouza.sistema_de_cadastro.service;
 
+import br.com.vcsouza.sistema_de_cadastro.repository.UsuarioRespository;
+
 import java.io.*;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -18,43 +21,55 @@ public class Leitura {
     }
 
     public void listarTodosUsuarios() {
-        File[] files = getFiles();
-        assert files != null;
-        int count = 1;
-        for (File file : files) {
-            try {
-                Scanner scanner = new Scanner(file);
-                System.out.println(count + " - " + scanner.nextLine());
-                count++;
-            } catch (FileNotFoundException e) {
-                throw new RuntimeException(e);
-            }
+//        File[] files = getFiles();
+//        assert files != null;
+//        int count = 1;
+//        for (File file : files) {
+//            try {
+//                Scanner scanner = new Scanner(file);
+//                System.out.println(count + " - " + scanner.nextLine());
+//                count++;
+//            } catch (FileNotFoundException e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
+        List<String> allUsuarios = UsuarioRespository.findAllUsuarios();
+        int i = 1;
+        for(String usuario: allUsuarios){
+            System.out.println(i + " - " + usuario);
+            i++;
         }
     }
 
     public void procuraUsuarios() {
-        File[] files = getFiles();
+//        File[] files = getFiles();
         Scanner read = new Scanner(System.in);
 
         System.out.println("Qual usuario deseja buscar: ");
         String user = read.nextLine().toLowerCase();
 
-        int count = 1;
-        for (File file : files) {
-            try {
-                BufferedReader fileReader = new BufferedReader(new FileReader(file));
-                String extractedUser = fileReader.readLine().toLowerCase();
-                if (extractedUser.startsWith(user)) {
-                    System.out.println(count + " - " + extractedUser);
-                    count++;
-                }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+//        int count = 1;
+//        for (File file : files) {
+//            try {
+//                BufferedReader fileReader = new BufferedReader(new FileReader(file));
+//                String extractedUser = fileReader.readLine().toLowerCase();
+//                if (extractedUser.startsWith(user)) {
+//                    System.out.println(count + " - " + extractedUser);
+//                    count++;
+//                }
+//            } catch (IOException e) {
+//                throw new RuntimeException(e);
+//            }
+//
+//        }
 
+        List<String> usuarios = UsuarioRespository.findUsuario(user);
+
+        int i = 1;
+        for (String usuario: usuarios){
+            System.out.println(i + " - " + usuario);
+            i++;
         }
-
-
     }
 
     public boolean verificarEmailUnico(String emailAhSerCadastrado) {

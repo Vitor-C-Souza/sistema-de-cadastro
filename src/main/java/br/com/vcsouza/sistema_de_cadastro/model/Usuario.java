@@ -2,19 +2,21 @@ package br.com.vcsouza.sistema_de_cadastro.model;
 
 import br.com.vcsouza.sistema_de_cadastro.exception.*;
 import br.com.vcsouza.sistema_de_cadastro.service.Leitura;
-
+import lombok.Getter;
+import lombok.Setter;
 import java.util.List;
 
+@Getter
+@Setter
 public class Usuario {
-    private final String nome;
-    private final String email;
-    private final int idade;
-    private final double altura;
-    private final List<String> extra;
-
-    Leitura verifica = new Leitura();
+    private String nome;
+    private String email;
+    private int idade;
+    private double altura;
+    private List<String> extra;
 
     public Usuario(List<String> respostas) {
+        Leitura verifica = new Leitura();
         if(respostas.getFirst().length()<10){
             throw new nomeLengthException("o nome não pode conter menos de 10 caracteres");
         }
@@ -36,10 +38,6 @@ public class Usuario {
         }
         this.altura = Double.parseDouble(respostas.get(3));
         this.extra = respostas.subList(4, respostas.size());
-    }
-
-    public String getNome() {
-        return nome;
     }
 
     @Override

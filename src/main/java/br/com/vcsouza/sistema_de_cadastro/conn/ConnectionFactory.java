@@ -6,16 +6,12 @@ import java.sql.SQLException;
 
 public class ConnectionFactory {
 
-    public static Connection getConnection(){
+    public static Connection getConnection() throws SQLException {
         String url = "jdbc:mysql://localhost:3306/sistema_de_cadastro";
         String username = "root";
         String password = "6040";
-        try {
-            Connection connection = DriverManager.getConnection(url, username, password);
-            System.out.println(connection);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        return null;
+        return DriverManager.getConnection(url, username, password);
+
+
     }
 }
