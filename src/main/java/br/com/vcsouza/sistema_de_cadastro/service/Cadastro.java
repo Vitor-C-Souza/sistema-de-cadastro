@@ -5,6 +5,7 @@ import br.com.vcsouza.sistema_de_cadastro.exception.formatEmailInvalidException;
 import br.com.vcsouza.sistema_de_cadastro.exception.idadeInvalidException;
 import br.com.vcsouza.sistema_de_cadastro.exception.nomeLengthException;
 import br.com.vcsouza.sistema_de_cadastro.model.Usuario;
+import br.com.vcsouza.sistema_de_cadastro.repository.UsuarioRespository;
 
 import java.util.List;
 
@@ -20,8 +21,9 @@ public class Cadastro {
         try {
             Usuario usuario = new Usuario(respostas);
 
-            Arquivo file = new Arquivo();
-            file.gravarCadastro(usuario);
+//            Arquivo file = new Arquivo();
+//            file.gravarCadastro(usuario);
+            UsuarioRespository.save(usuario);
         } catch (nomeLengthException e){
             System.out.println(e.getMessage());
         } catch(formatEmailInvalidException e){
